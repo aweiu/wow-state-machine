@@ -1,6 +1,6 @@
 {
   "name": "wow-state-machine",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "像多线程那样去轮询多个状态，不同的状态满足后去执行不同的任务",
   "keywords": [
     "state-machine",
