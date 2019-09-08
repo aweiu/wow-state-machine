@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-set-promise-interval@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/set-promise-interval/-/set-promise-interval-1.0.2.tgz#9a45d4dd608c62e1dd560e28cff2375c7708b6ac"
-  integrity sha512-s7EylxOLlqahgCAMHhjeZGwQNZUYTX9iy6qSL7qG7dc6uVgMhe9SJJNPUHf1Qf1yn3Bxru65t3iqr09+dcNyaA==
+set-promise-interval@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/set-promise-interval/-/set-promise-interval-1.0.7.tgz#a4ddb6251b6386f0397453b8375e1d5c1137ee3e"
+  integrity sha512-qAUp21XfhJwJlcc21uFd1/1HFoD4yC742xIkEEtCs7OO3w5Nv4zO7Y5HYHyEC16Qhnc8lz7AhSTmTEExRqQuWA==
 
 typescript@^3.5.3:
   version "3.5.3"
