@@ -1,0 +1,26 @@
+{
+  "name": "wow-state-machine",
+  "version": "1.0.1",
+  "description": "像多线程那样去轮询多个状态，不同的状态满足后去执行不同的任务",
+  "keywords": [
+    "state-machine",
+    "async",
+    "thread",
+    "interval",
+    "timer"
+  ],
+  "main": "dist/wow-state-machine.js",
+  "typings": "types/wow-state-machine.d.ts",
+  "author": "aweiu",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aweiu/wow-state-machine"
+  },
+  "dependencies": {
+    "set-promise-interval": "^1.0.2"
+  },
+  "devDependencies": {
+    "typescript": "^3.5.3"
+  }
+}

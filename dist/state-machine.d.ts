@@ -1,0 +1,32 @@
+declare type DataOrPromiseData<T> = T | Promise<T>;
+declare type Publisher<T> = () => DataOrPromiseData<T>;
+declare type Subscriber = () => any;
+declare type OnTick<T> = (state: T, lastState: T | undefined, isFirstTick: boolean) => any;
+declare type OnError = (e: Error) => any;
+declare type OnTimeout<T> = (state: T) => any;
+export default class StateMachine<T extends string | number> {
+    private publisher;
+    private onTickCallback?;
+    private onErrorCallback?;
+    private onTimeoutCallback?;
+    private mainLoop?;
+    private lastState?;
+    private states;
+    private runners;
+    private timeoutChecker;
+    constructor(publisher: Publisher<T>);
+    private errorHandle;
+    private timeoutHandle;
+    private startTimeoutChecker;
+    private stopTimeoutChecker;
+    private startRunner;
+    private stopRunner;
+    private publish;
+    on(state: T, stateMachineOrSubscriber: StateMachine<any> | Subscriber, timeout?: number, tick?: number): this;
+    onTick(callback: OnTick<T>): this;
+    onError(callback: OnError): this;
+    onTimeout(callback: OnTimeout<T>): this;
+    start(tick?: number): void;
+    stop(): void;
+}
+export {};

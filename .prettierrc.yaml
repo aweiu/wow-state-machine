@@ -1,0 +1,4 @@
+semi: false # 不添加分号
+singleQuote: true # js 内使用单引号
+trailingComma: 'all' # 末尾总是添加逗号
+arrowParens: 'always' # 参数总是用括号包裹
